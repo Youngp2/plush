@@ -1,0 +1,613 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block active_homepage%} active {% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+
+    <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Plushpuppies</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ready to fill your life with wagging tails, playful nips, and unconditional love? 
+                    Explore our adorable selection of healthy, happy puppies from responsible breeders. Your new best friend is just a paw-click away!
+                </p>
+                <a href="{% url 'myapp:about' %}" class="btn-get-started animate__animated animate__fadeInUp ">Read
+                    More</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Your Trusted Source for Happy & Healthy Puppies.</h2>
+                <p class="animate__animated animate__fadeInUp">We connect loving families with well-socialized puppies raised with care and commitment. 
+                Our rigorous screening process ensures you're welcoming a healthy and temperamentally sound companion into your home.
+                </p>
+                <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+            <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+    </svg>
+
+</section><!-- /Hero Section -->
+
+<!-- About Section -->
+<section id="about" class="about section">
+
+    <div class="container section-title" data-aos="fade-up">
+        <h2>About PlushPuppies</h2>
+        <p>Our Happy Little Family of Fluffs</p>
+    </div>
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    Welcome to PlushPuppies! We are a small, family-run kennel dedicated to raising adorable and healthy
+                    [mention a few popular breeds you might raise, e.g., Golden Retriever, Labrador, and Poodle]
+                    puppies. Our love for these wonderful companions drives everything we do, and we are passionate
+                    about connecting our fluffy bundles of joy with loving families.
+                </p>
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>At PlushPuppies, the health and well-being of our
+                            puppies are our utmost priority. They receive the best care, including regular vet check-ups
+                            and a nutritious diet.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>We believe in early socialization. Our puppies are
+                            raised in our home, interacting daily with our family, including children, which helps them
+                            develop friendly and confident personalities.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Our goal is to provide you with a happy, healthy, and
+                            well-adjusted puppy that will bring years of love and companionship to your home.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <p>Our journey with puppies began several years ago with our beloved family dog, [mention a generic dog
+                    name, e.g., Bella]. Witnessing the joy and unconditional love she brought into our lives inspired us
+                    to share that happiness with others. We carefully plan each litter, focusing on the health,
+                    temperament, and breed characteristics of our parent dogs. Raising these little plush puppies in our
+                    home is a labor of love, and we cherish every moment. We are committed to responsible breeding
+                    practices and ensuring our puppies find their perfect forever families.</p>
+                <a href="#" class="read-more"><span>Meet Our Parent Dogs</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- /About Section -->
+
+<!-- Features Section -->
+<section id="features" class="features section">
+
+    <div class="container">
+
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+            <li class="nav-item col-3">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                    <i class="bi bi-heart-fill"></i>
+                    <h4 class="d-none d-lg-block">Loving Home Environment</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                    <i class="bi bi-house-heart-fill"></i>
+                    <h4 class="d-none d-lg-block">Family Raised Puppies</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                    <i class="bi bi-clipboard-check-fill"></i>
+                    <h4 class="d-none d-lg-block">Health and Well-being</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                    <i class="bi bi-person-hearts"></i>
+                    <h4 class="d-none d-lg-block">Early Socialization</h4>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Our PlushPuppies are raised in a warm and loving home environment.</h3>
+                        <p class="fst-italic">
+                            From birth, our puppies are surrounded by care and affection, ensuring they feel secure and
+                            develop into happy individuals.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i>
+                                <spab>We provide a clean, comfortable, and stimulating environment for our puppies to
+                                    grow and explore.</spab>
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> <span>Our days are filled with cuddles, playtime, and
+                                    gentle interaction to nurture their development.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We believe a loving start is essential for a
+                                    puppy's future happiness and well-being.</span></li>
+                        </ul>
+                        <p>
+                            We strive to create a foundation of trust and comfort for each of our PlushPuppies before
+                            they embark on their new adventures with their forever families.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\hero-carousel-1.jpg' %}" alt="Loving Home Environment"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features-tab-2">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Our puppies are raised as part of our family, receiving constant attention and care.</h3>
+                        <p>
+                            Being family-raised means our PlushPuppies are well-accustomed to the everyday sounds and
+                            activities of a home, making their transition to your family much smoother.
+                        </p>
+                        <p class="fst-italic">
+                            They interact regularly with adults and children, learning valuable social skills and
+                            developing gentle temperaments.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>They experience the warmth and companionship of
+                                    human interaction from their earliest days.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Our family is dedicated to providing a nurturing
+                                    and enriching environment for each puppy.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We believe this close interaction helps our
+                                    PlushPuppies become well-adjusted and loving companions.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>They learn to feel secure and loved within a
+                                    family setting.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\hero-carousel-2.jpg' %}" alt="Family Raised Puppies"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features-tab-3">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>The health and well-being of our PlushPuppies are of paramount importance to us.</h3>
+                        <p>
+                            We ensure all our puppies receive regular veterinary care, including health checks, initial
+                            vaccinations, and deworming.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>Each puppy is examined by a licensed veterinarian
+                                    before going to their new home.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We provide you with a record of their
+                                    vaccinations and health history.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We are committed to responsible breeding and
+                                    ensuring healthy, happy puppies.</span></li>
+                        </ul>
+                        <p class="fst-italic">
+                            We are always available to answer any questions you may have about the health and ongoing
+                            care of your new PlushPuppy.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\IMG_6957.jpeg' %}" alt="Health and Well-being"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features-tab-4">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>We believe early socialization is crucial for our PlushPuppies to develop into well-mannered
+                            and friendly dogs.</h3>
+                        <p>
+                            From a young age, our puppies are introduced to a variety of sights, sounds, people, and
+                            gentle handling.
+                        </p>
+                        <p class="fst-italic">
+                            This early exposure helps them build confidence and adapt more easily to new environments
+                            and experiences in their future lives.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>They interact daily with our family, including
+                                    children of different ages.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We introduce them to different textures, toys,
+                                    and common household sounds.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Our goal is to ensure our PlushPuppies are
+                                    well-socialized and ready to become loving members of your family.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\IMG_6958.jpeg' %}" alt="Early Socialization" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- /Features Section -->
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+    <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-9 text-center text-xl-start">
+                <h3>Call To Action</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.</p>
+            </div>
+            <div class="col-xl-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="#">Call To Action</a>
+            </div>
+        </div>
+
+    </div>
+
+</section><!-- /Call To Action Section -->
+<!-- Services Section -->
+<section id="services" class="services section">
+
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>How We Care for Your Future Companion</p>
+    </div>
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                    <div class="icon">
+                        <i class="bi bi-house-heart-fill" style="color: #5cb85c;"></i>
+                    </div>
+                    <a href="/raising-process/" class="stretched-link">
+                        <h3>Loving Home Raising</h3>
+                    </a>
+                    <p>Our puppies are raised in our home with constant love and attention, ensuring they are
+                        well-adjusted to family life from day one.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-clipboard-check-fill" style="color: #007bff;"></i>
+                    </div>
+                    <a href="/health-guarantee/" class="stretched-link">
+                        <h3>Comprehensive Health Care</h3>
+                    </a>
+                    <p>We prioritize the health of our puppies, providing thorough vet checks, initial vaccinations, and
+                        deworming before they go to their new homes. Health records are provided.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-person-hearts" style="color: #ffc107;"></i>
+                    </div>
+                    <a href="/socialization-program/" class="stretched-link">
+                        <h3>Early Socialization Program</h3>
+                    </a>
+                    <p>Our puppies are introduced to various sights, sounds, people, and gentle handling from a young
+                        age to develop friendly and confident personalities.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-chat-dots-fill" style="color: #e83e8c;"></i>
+                    </div>
+                    <a href="/adoption-process/" class="stretched-link">
+                        <h3>Guidance on Adoption</h3>
+                    </a>
+                    <p>We provide guidance and support throughout the adoption process to ensure our puppies find the
+                        perfect loving forever homes.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-question-circle-fill" style="color: #28a745;"></i>
+                    </div>
+                    <a href="/post-adoption-support/" class="stretched-link">
+                        <h3>Post-Adoption Support</h3>
+                    </a>
+                    <p>We offer ongoing support and are available to answer any questions you may have after you welcome
+                        one of our PlushPuppies into your family.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-file-earmark-text-fill" style="color: #6f42c1;"></i>
+                    </div>
+                    <a href="/information-resources/" class="stretched-link">
+                        <h3>Information and Resources</h3>
+                    </a>
+                    <p>We provide helpful resources and information on puppy care, training tips, and breed-specific
+                        details to help you and your new companion thrive.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- /Services Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What Happy Families Are Saying About Their PlushPuppies</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonial-1.jpg' %}" class="testimonial-img"
+                            alt="Happy Customer 1">
+                        <h3>Sarah M.</h3>
+                        <h4>Proud Owner of a Golden PlushPuppy</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>We brought home our sweet [mention a generic puppy name, e.g., Goldie] from
+                                PlushPuppies last month, and she has been the perfect addition to our family! She's
+                                playful, affectionate, and clearly was raised with so much love. We couldn't be
+                                happier!</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonial-2.jpg' %}" class="testimonial-img"
+                            alt="Happy Customer 2">
+                        <h3>John B.</h3>
+                        <h4>Loving Owner of a Labrador PlushPuppy</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>The experience with PlushPuppies was wonderful from start to finish. They were
+                                knowledgeable, caring, and made the process of getting our [mention another generic
+                                puppy name, e.g., Buddy] so easy. He's a healthy and happy pup, and we highly recommend
+                                them!</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonial-3.jpg' %}" class="testimonial-img"
+                            alt="Happy Customer 3">
+                        <h3>Emily K.</h3>
+                        <h4>Delighted Owner of a Poodle PlushPuppy</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Our little [mention another generic puppy name, e.g., Coco] has brought so much joy
+                                into our home. You can tell she came from a loving environment. PlushPuppies clearly
+                                cares deeply about their dogs, and we are so grateful to have found them!</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonial-4.jpg' %}" class="testimonial-img"
+                            alt="Happy Customer 4">
+                        <h3>David L.</h3>
+                        <h4>Happy Owner of a Mixed Breed PlushPuppy</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>We were impressed with the care and attention the puppies received at PlushPuppies.
+                                Our [mention another generic puppy name, e.g., Scout] is a wonderful, well-tempered dog,
+                                and we appreciate the support we received during the adoption process.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonial-5.jpg' %}" class="testimonial-img"
+                            alt="Happy Customer 5">
+                        <h3>Jessica P.</h3>
+                        <h4>Thrilled Owner of a PlushPuppy</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Getting our puppy from PlushPuppies was a fantastic experience. They are clearly
+                                passionate about what they do, and it shows in the happy and healthy puppy we brought
+                                home. Thank you, PlushPuppies!</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- /Testimonials Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>info@example.com</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+            </div>
+
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                required=""></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                            <button type="submit">Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+
+</section><!-- /Contact Section -->
+
+
+
+
+{% endblock content %}

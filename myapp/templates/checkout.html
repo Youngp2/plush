@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block active_store %} active {% endblock active_store %}
+
+{% block content %}
+
+<title>Checkout</title>
+<script type="text/javascript">
+    // Automatically redirect to the mailto link
+    window.location.href = "{{ mailto_link }}";
+</script>
+</head>
+
+<body>
+    <br><br><br><br><br><br>
+    <h1>Checkout</h1>
+    <p>Redirecting to email client...</p>
+    <p>If not Automatically redirected to email, <a href= "{{ mailto_link }}">click here.</a></p>
+</body>
+
+</html>
+
+{% endblock content %}

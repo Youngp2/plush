@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block active_about %} active {% endblock %}
+
+{% block content %}
+<br><br><br><br>
+<section id="about" class="about section">
+
+    <div class="container section-title" data-aos="fade-up">
+        <h2>About PlushPuppies</h2>
+        <p>Our Happy Little Family of Fluffs</p>
+    </div>
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    Welcome to PlushPuppies! We are a small, family-run kennel dedicated to raising adorable and healthy
+                    [mention a few popular breeds you might raise, e.g., Golden Retriever, Labrador, and Poodle]
+                    puppies. Our love for these wonderful companions drives everything we do, and we are passionate
+                    about connecting our fluffy bundles of joy with loving families.
+                </p>
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>At PlushPuppies, the health and well-being of our
+                            puppies are our utmost priority. They receive the best care, including regular vet check-ups
+                            and a nutritious diet.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>We believe in early socialization. Our puppies are
+                            raised in our home, interacting daily with our family, including children, which helps them
+                            develop friendly and confident personalities.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Our goal is to provide you with a happy, healthy, and
+                            well-adjusted puppy that will bring years of love and companionship to your home.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <p>Our journey with puppies began several years ago with our beloved family dog, [mention a generic dog
+                    name, e.g., Bella]. Witnessing the joy and unconditional love she brought into our lives inspired us
+                    to share that happiness with others. We carefully plan each litter, focusing on the health,
+                    temperament, and breed characteristics of our parent dogs. Raising these little plush puppies in our
+                    home is a labor of love, and we cherish every moment. We are committed to responsible breeding
+                    practices and ensuring our puppies find their perfect forever families.</p>
+                <a href="/our-adult-dogs/" class="read-more"><span>Meet Our Parent Dogs</span><i
+                        class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="features" class="features section">
+
+    <div class="container">
+
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+            <li class="nav-item col-3">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                    <i class="bi bi-heart-fill"></i>
+                    <h4 class="d-none d-lg-block">Loving Home Environment</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                    <i class="bi bi-house-heart-fill"></i>
+                    <h4 class="d-none d-lg-block">Family Raised Puppies</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                    <i class="bi bi-clipboard-check-fill"></i>
+                    <h4 class="d-none d-lg-block">Health and Well-being</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                    <i class="bi bi-person-hearts"></i>
+                    <h4 class="d-none d-lg-block">Early Socialization</h4>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Our PlushPuppies are raised in a warm and loving home environment.</h3>
+                        <p class="fst-italic">
+                            From birth, our puppies are surrounded by care and affection, ensuring they feel secure and
+                            develop into happy individuals.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i>
+                                <spab>We provide a clean, comfortable, and stimulating environment for our puppies to
+                                    grow and explore.</spab>
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> <span>Our days are filled with cuddles, playtime, and
+                                    gentle interaction to nurture their development.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We believe a loving start is essential for a
+                                    puppy's future happiness and well-being.</span></li>
+                        </ul>
+                        <p>
+                            We strive to create a foundation of trust and comfort for each of our PlushPuppies before
+                            they embark on their new adventures with their forever families.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\hero-carousel-1.jpg' %}" alt="Loving Home Environment"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features-tab-2">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Our puppies are raised as part of our family, receiving constant attention and care.</h3>
+                        <p>
+                            Being family-raised means our PlushPuppies are well-accustomed to the everyday sounds and
+                            activities of a home, making their transition to your family much smoother.
+                        </p>
+                        <p class="fst-italic">
+                            They interact regularly with adults and children, learning valuable social skills and
+                            developing gentle temperaments.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>They experience the warmth and companionship of
+                                    human interaction from their earliest days.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Our family is dedicated to providing a nurturing
+                                    and enriching environment for each puppy.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We believe this close interaction helps our
+                                    PlushPuppies become well-adjusted and loving companions.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>They learn to feel secure and loved within a
+                                    family setting.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\hero-carousel-2.jpg' %}" alt="Family Raised Puppies"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features-tab-3">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>The health and well-being of our PlushPuppies are of paramount importance to us.</h3>
+                        <p>
+                            We ensure all our puppies receive regular veterinary care, including health checks, initial
+                            vaccinations, and deworming.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>Each puppy is examined by a licensed veterinarian
+                                    before going to their new home.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We provide you with a record of their
+                                    vaccinations and health history.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We are committed to responsible breeding and
+                                    ensuring healthy, happy puppies.</span></li>
+                        </ul>
+                        <p class="fst-italic">
+                            We are always available to answer any questions you may have about the health and ongoing
+                            care of your new PlushPuppy.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\IMG_6957.jpeg' %}" alt="Health and Well-being"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="features-tab-4">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>We believe early socialization is crucial for our PlushPuppies to develop into well-mannered
+                            and friendly dogs.</h3>
+                        <p>
+                            From a young age, our puppies are introduced to a variety of sights, sounds, people, and
+                            gentle handling.
+                        </p>
+                        <p class="fst-italic">
+                            This early exposure helps them build confidence and adapt more easily to new environments
+                            and experiences in their future lives.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>They interact daily with our family, including
+                                    children of different ages.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>We introduce them to different textures, toys,
+                                    and common household sounds.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Our goal is to ensure our PlushPuppies are
+                                    well-socialized and ready to become loving members of your family.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets\img\IMG_6958.jpeg' %}" alt="Early Socialization" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock content %}
